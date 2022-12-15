@@ -58,33 +58,42 @@
 
             <div class="form">
               <div class="genre">
-                <h3>Selecione</h3>
-                <p class="sexo">Sexo</p>
+                <h3 class="genre__title">Selecione:</h3>
+                <p class="genre__type">Sexo</p>
 
-                <div class="men">
-                  <label for="" class="men">Homem</label>
-                  <input type="checkbox" name="" id="men" />
-                </div>
-
-                <div class="woman">
-                  <label for="" class="woman">Mulher</label>
-                  <input type="checkbox" name="" id="woman" />
+                <div class="genre__input">
+                  <input type="radio" name="mybox" value="men" id="men" />
+                    <label for="men" class="men">Homem</label>
+  
+                    <input type="radio" name="mybox" value="woman"" id="woman" />
+                    <label for="woman" class="woman">Mulher</label>
                 </div>
 
                 <div class="inputIMC">
-                  <h3>IMC para Adulto</h3>
-                  <input type="text" name="" id="weight" />
-                  <input type="text" name="" id="height" />
+                  <h3 class="input__title">IMC para Adulto</h3>
+                  
+                  <div class="input__box">
+                    <input class="input__imc" type="number" name="" id="weight"  required/>
+                    <label for="" class="input__label">Peso(KG)</label>
+                  </div>
+
+                  <div class="input__box">
+                    <input class="input__imc" type="number" name="" id="height" required />
+                    <label for="" class="input__label">Altura (m)</label>
+                  </div>
                 </div>
+
               </div>
-              <button class="button__calcular">Calcular</button>
+              <button class="button__calcular" id="buttonCalc" onclick="calc()">Calcular</button>
             </div>
-            <div id="resultIMC">
-              <p id="yourIMC"></p>
+            <div id="outIMC">
+              <p class="out__msg" id="outMsg"></p>
+              <p class="out__msg out__IMC--mainColor " id="yourImc"></p>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <script src="js/main.js"></script>
   </body>
 </html>

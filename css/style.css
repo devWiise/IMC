@@ -18,6 +18,13 @@ body {
    background: var(--body-color);
 }
 
+/* Remove arrow input Number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .navegation {
    display: flex;
    justify-content: space-between;
@@ -99,3 +106,131 @@ body {
    line-height: 16px;
 }
 
+
+.form {
+   position: relative;
+   padding: 1.5rem 1.2rem;
+   margin-bottom: 6rem;
+   border: 2px solid var(--main-color);
+}
+
+.genre__title {
+   font-size: 2rem;
+   font-weight: 400;
+   line-height: 19px;
+   margin-bottom: .5rem;
+}  
+
+.genre__type {
+   font-family: 'Ubuntu',sans-serif;
+   font-size: 2rem;
+   font-weight: 500;
+   margin-bottom: .5rem;
+}
+
+
+.genre__input {
+   max-width: 15rem;
+   display: flex;
+   /* justify-content: space-between; */
+   align-items: center;
+   margin-bottom: 1.6rem;
+}
+
+.men,
+.woman {
+   font-family: 'Ubuntu';
+   font-size: 1.8rem;
+   font-weight: 400;
+   margin-left: .4rem;
+}
+/* Ajeitar depois */
+#woman {
+   margin-left: 1.4rem;
+}
+
+.input__title {
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 1.7rem;
+   font-weight: 500;
+   margin-bottom: 2rem;
+}
+
+.input__box {
+   position: relative;
+   margin-bottom: 2rem;
+}
+
+.input__label {
+   position: absolute;
+   top: -4px;
+   left: 0;
+   /* Qualquer lugar que eu clicar no input vai retonar uma ação */
+   pointer-events: none;
+
+   transition: .5s;
+
+   font-family: 'Ubuntu',sans-serif;
+   font-size: 1.7rem;
+   font-weight: 700;
+   color: var(--gray-input-color);
+}
+
+.input__imc {
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 1.6rem;
+   font-weight: 700;
+   width: 100%;
+   background: none;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid hsla(23, 29%, 88%, 0.664);
+   color: var(--gray-input-color);
+}
+
+/* Precisa de ajustes */
+.input__imc:focus ~ .input__label {
+   top: -16px;
+   font-size: 1rem;
+   color: #c2bfbd;
+}
+
+.input__imc:valid ~ .input__label {
+   top: -16px;
+   font-size: 1rem;
+}
+
+.button__calcular {
+   position: absolute;
+   left: 33%;
+
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 1.4rem;
+   font-weight: 700;
+
+   padding: 1rem 3.2rem;
+
+   outline: none;
+   border: none;
+   border-radius: 6px;
+   background: var(--main-color);
+   color: var(--white-color);
+   cursor: pointer;
+   z-index: 100;
+}
+
+.out__msg{
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 2.6rem;
+   font-weight: 700;
+   color: var(--gray-input-color);
+}
+
+.out__IMC--mainColor {
+   font-size: 3.6rem;
+   color: var(--main-color);
+}
+
+#outIMC {
+   display: block;
+}
