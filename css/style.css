@@ -1,0 +1,101 @@
+:root {
+   /* Variables */
+   --body-color: hsla(0, 0%, 95%, 1);
+   --main-color:hsla(14, 100%, 50%, 1);
+   --black-color: hsla(0, 0%, 0%, 1);
+   --gray-input-color: hsla(24, 5%, 58%, 1);
+   --gray-check-box-color: hsla(0, 0%, 85%, 1);
+   --gray-background-color: 	hsl(0, 0%, 12%);
+   --white-color: hsla(0, 0%, 100%, 1);
+}
+
+html {
+   font-size: 62.5%;
+   font-family: 'Inter', sans-serif;
+}
+
+body {
+   background: var(--body-color);
+}
+
+.navegation {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1.4rem 1.5rem;
+   margin-bottom: 4rem;
+   background-color: var(--gray-input-color);
+}
+
+.logo {
+   font-size: 1.7rem;
+}
+
+.menu__burger {
+   background: none;
+   outline: transparent;
+   border: transparent;
+}
+
+.fa-bars {
+   font-size: 2rem;
+   cursor: pointer;
+}
+
+.button__dark {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   margin-bottom: 4rem;
+}
+
+.night {
+   font-family: 'Ubuntu',sans-serif;
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+
+.teste {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: .3rem;
+}
+
+.button__dk {
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+   padding: .6rem 1.2rem;
+   border-radius: 2rem;
+   border-color: var(--main-color);
+}
+
+.fa-circle {
+   font-size: 1.6rem;
+   color: var(--main-color);
+}
+
+.imc__content {
+   width: 100%;
+   max-width: 35rem;
+   margin: auto;
+   text-align: center;
+   margin-bottom: 5rem;
+}
+
+.imc__title {
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 2.7rem;
+   font-weight: 700;
+   line-height: 26px;
+   margin-bottom: .8rem;
+}
+
+.imc__paragraph {
+   font-size: 1.4rem;
+   font-weight: 400;
+   line-height: 16px;
+}
+

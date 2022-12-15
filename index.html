@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <title>Calculadora IMC</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="navegation">
+        <a href="#" class="logo">Logo</a>
+        <button class="menu__burger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="home">
+        <div class="container">
+          <div class="button__dark">
+            <div class="teste"> <!-- Mudar o nome da div-->
+              <h4 class="night">Night</h4>
+              <button class="button__dk"><i class="fa-solid fa-circle"></i>OFF</button>
+            </div>
+          </div>
+
+          <div class="imc">
+            <div class="imc__content">
+              <h1 class="imc__title">Calculadora IMC</h1>
+              <p class="imc__paragraph">
+                O IMC é um índice que mede se você está abaixo, dentro ou acima
+                do peso, de acordo com a relação entre seu peso e altura.
+                Descubra como calcular esse índice, quais os valores ideais, as
+                exceções da tabela padrão.
+              </p>
+            </div>
+
+            <div class="form">
+              <div class="genre">
+                <h3>Selecione</h3>
+                <p class="sexo">Sexo</p>
+
+                <div class="men">
+                  <label for="" class="men">Homem</label>
+                  <input type="checkbox" name="" id="men" />
+                </div>
+
+                <div class="woman">
+                  <label for="" class="woman">Mulher</label>
+                  <input type="checkbox" name="" id="woman" />
+                </div>
+
+                <div class="inputIMC">
+                  <h3>IMC para Adulto</h3>
+                  <input type="text" name="" id="weight" />
+                  <input type="text" name="" id="height" />
+                </div>
+              </div>
+              <button class="button__calcular">Calcular</button>
+            </div>
+            <div id="resultIMC">
+              <p id="yourIMC"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
