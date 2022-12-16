@@ -22,11 +22,12 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/componentes.css">
     <link rel="stylesheet" href="css/reset.css" />
     <title>Calculadora IMC</title>
   </head>
 
-  <body>
+  <body id="darkMode">
     <header>
       <div class="navegation">
         <a href="#" class="logo">Logo</a>
@@ -39,10 +40,7 @@
       <section class="home">
         <div class="container">
           <div class="button__dark">
-            <div class="teste"> <!-- Mudar o nome da div-->
-              <h4 class="night">Night</h4>
-              <button class="button__dk"><i class="fa-solid fa-circle"></i>OFF</button>
-            </div>
+            <input class="check" type="checkbox" onclick="darkMode()">
           </div>
 
           <div class="imc">
@@ -73,19 +71,19 @@
                   <h3 class="input__title">IMC para Adulto</h3>
                   
                   <div class="input__box">
-                    <input class="input__imc" type="text" name="" id="weight"  required/>
+                    <input class="input__imc" type="number" name="" id="weight" autocomplete="off" step="0.01" required/>
                     <label for="" class="input__label">Peso(KG)</label>
                   </div>
 
                   <div class="input__box">
-                    <input class="input__imc" type="text" name="" id="height" required />
+                    <input class="input__imc" type="number" name="" id="height" autocomplete="off" step="0.01" required/>
                     <label for="" class="input__label">Altura (m)</label>
                   </div>
 
                 </div>
 
               </div>
-              <button class="button__calcular" id="buttonCalc" onclick="calc()">Calcular</button>
+              <button class="button__calcular" id="buttonCalc" onclick="calcIMC()">Calcular</button>
             </div>
             <div id="outIMC">
               <p class="out__msg" id="outMsg"></p>

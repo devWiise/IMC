@@ -1,0 +1,86 @@
+/* .switch {
+   position: relative;
+   display: inline-block;
+   width: 80px;
+   height: 40px;
+   margin: 0 10px;
+}
+
+.slider {
+   position: absolute;
+   cursor: pointer;
+   left: 10px;
+   top: 60px;
+   right: 420px;
+   bottom: 700px;
+   background-color: #ccc;
+   transition: .4s;
+   border-radius: 34px;
+   z-index: 1;
+}
+
+.switch input {display: none } 
+
+.slider::before {
+   position: absolute;
+   display: inline-block;
+   content: '';
+   width: 30px;
+   height: 30px;
+   left: 10px;
+   bottom: 5px;
+   background-color: white;
+   transition: .4s;
+   border-radius: 50px;
+}
+
+input:checked + .slider {
+   background-color: #252525;
+}
+
+input:checked + .slider::before {
+   transform: translateX(30px);
+} */
+
+.check {
+   appearance: none;
+   height: 32px;
+   width: 62px;
+   background: #34384b;
+   border-radius: 50px;
+   position: absolute;
+   margin: auto;
+
+   cursor: pointer;
+   outline: none;
+   border: none;
+}
+
+.check[type="checkbox"]::before {
+   content: '';
+   position: absolute;
+   left: 7px;
+   top: 6px;
+   height: 20px;
+   width: 20px;
+   background: white;
+   border-radius: 50px;
+
+   transition: all .3s;
+}
+
+/* .check[type="checkbox"]::after {
+   content: 'FF';
+   position: absolute;
+
+} */
+
+.check[type="checkbox"]:checked {
+   background-color: #19d28f;
+
+}
+
+.check[type="checkbox"]:checked::before {
+   background: #1f212d;
+   left: 35px;
+}

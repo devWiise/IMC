@@ -241,3 +241,7 @@ input::-webkit-inner-spin-button {
 #outIMC {
    display: block;
 }
+
+.dkMode  {
+   background-color: #252525;
+}
