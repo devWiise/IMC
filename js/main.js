@@ -2,16 +2,22 @@
 
 function calc() {
    // const checkMen = document.getElementById('men').checked
-   const inptWeight = Number(document.getElementById('weight').value)
-   const inptHeight = Number(document.getElementById('height').value) 
+   const inptWeight = document.getElementById('weight')
+   const inptHeight = document.getElementById('height')
    const outMsg = document.getElementById('outMsg').innerText = 'seu IMC é:'
    const outIMC = document.getElementById('yourImc')
-   const imc = (inptWeight / (inptHeight * inptHeight)) 
+   // convert
+   const peso = Number(inptWeight.value)
+   const altura = Number(inptHeight.value)
    
-   if(inptWeight === 0 && inptHeight === 0) {
-      return alert('Preenchar todos os campos')    
+   const imc = (peso / (altura * altura)) 
+   
+   if((peso === 0 || peso === isNaN(peso)) && (altura === 0 || altura === isNaN(altura)) ) {
+      alert('Preenchar todos os campos') 
+      return 
    }
-
+   
+   
    return outIMC.innerText = `${imc.toFixed(2)}`
 }
 

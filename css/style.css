@@ -156,48 +156,55 @@ input::-webkit-inner-spin-button {
    margin-bottom: 2rem;
 }
 
+
+/* teste */
 .input__box {
    position: relative;
-   margin-bottom: 2rem;
-}
-
-.input__label {
-   position: absolute;
-   top: -4px;
-   left: 0;
-   /* Qualquer lugar que eu clicar no input vai retonar uma ação */
-   pointer-events: none;
-
-   transition: .5s;
-
-   font-family: 'Ubuntu',sans-serif;
-   font-size: 1.7rem;
-   font-weight: 700;
-   color: var(--gray-input-color);
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 30px;
 }
 
 .input__imc {
+   width: 100%;
+
    font-family: 'Ubuntu', sans-serif;
    font-size: 1.6rem;
    font-weight: 700;
-   width: 100%;
-   background: none;
+
    border: none;
    outline: none;
+   background: none;
    border-bottom: 1px solid hsla(23, 29%, 88%, 0.664);
    color: var(--gray-input-color);
 }
 
-/* Precisa de ajustes */
+.input__label {
+   position: absolute;
+   top: 0;
+   left: 0;
+/* Qualquer lugar que eu clicar no input vai retonar uma ação */
+   pointer-events: none;
+
+
+   font-family: 'Ubuntu',sans-serif;
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: var(--gray-input-color);
+
+   transition: .5s;
+}
+
 .input__imc:focus ~ .input__label {
-   top: -16px;
-   font-size: 1rem;
+   font-size: 1.3rem;
    color: #c2bfbd;
 }
+
 
 .input__imc:valid ~ .input__label {
    top: -16px;
    font-size: 1rem;
+   color: #c2bfbd;
 }
 
 .button__calcular {
