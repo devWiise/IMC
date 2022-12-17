@@ -18,11 +18,27 @@ function calcIMC() {
 }
 
 
-// changeBodyColor 
 function darkMode() {
-   const inDarkMode = document.getElementById('darkMode')   
-   inDarkMode.classList.toggle('dkMode')
+   const changeColorBody = document.getElementById('darkMode')   
+   const changeColorTitleIMC = document.getElementById('imcTitle')
+   const changeColorParagraphIMC = document.getElementById('imcParagraph')
+   const changeColorGenrerTitle = document.getElementById('genreTitle')
+   const changeColorGenrerParagraph = document.getElementById('genreParagraph')
+   const changeColorLabelMen = document.getElementById('menLabel')
+   const changeColorLabelWoman = document.getElementById('womanLabel')
+   const changeColorInputTitle = document.getElementById('inputTitle')
+
+
+
+   changeColorBody.classList.toggle('dkMode')
+   changeColorTitleIMC.classList.toggle('titleDark')
+   changeColorGenrerTitle.classList.toggle('titleDark')
+   changeColorParagraphIMC.classList.toggle('paragraphDark')
+   changeColorGenrerParagraph.classList.toggle('titleDark')
+   changeColorLabelMen.classList.toggle('paragraphDark')
+   changeColorLabelWoman.classList.toggle('paragraphDark')
+   changeColorInputTitle.classList.toggle('titleDark')
 }
 
-// const btnCalc = document.getElementById('buttonCalc')
-// btnCalc.addEventListener('click', calc())
+
+

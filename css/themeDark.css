@@ -1,0 +1,11 @@
+.titleDark {
+   color: var(--main-color);
+}
+
+.paragraphDark {
+   color: var(--white-color);
+}
+
+.dkMode  {
+   background-color: #252525;
+}

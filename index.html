@@ -20,9 +20,10 @@
       referrerpolicy="no-referrer"
     />
     <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/themeDark.css">
     <link rel="stylesheet" href="css/reset.css" />
     <title>Calculadora IMC</title>
   </head>
@@ -45,8 +46,8 @@
 
           <div class="imc">
             <div class="imc__content">
-              <h1 class="imc__title">Calculadora IMC</h1>
-              <p class="imc__paragraph">
+              <h1 id="imcTitle" class="imc__title">Calculadora IMC</h1>
+              <p class="imc__paragraph" id="imcParagraph">
                 O IMC é um índice que mede se você está abaixo, dentro ou acima
                 do peso, de acordo com a relação entre seu peso e altura.
                 Descubra como calcular esse índice, quais os valores ideais, as
@@ -56,19 +57,19 @@
 
             <div class="form">
               <div class="genre">
-                <h3 class="genre__title">Selecione:</h3>
-                <p class="genre__type">Sexo</p>
+                <h3 class="genre__title" id="genreTitle">Selecione:</h3>
+                <p class="genre__type" id="genreParagraph">Sexo</p>
 
                 <div class="genre__input">
                   <input type="radio" name="mybox" value="men" id="men" />
-                    <label for="men" class="men">Homem</label>
+                    <label for="men" class="men" id="menLabel">Homem</label>
   
                     <input type="radio" name="mybox" value="woman"" id="woman" />
-                    <label for="woman" class="woman">Mulher</label>
+                    <label for="woman" class="woman" id="womanLabel">Mulher</label>
                 </div>
 
                 <div class="inputIMC">
-                  <h3 class="input__title">IMC para Adulto</h3>
+                  <h3 class="input__title" id="inputTitle">IMC para Adulto</h3>
                   
                   <div class="input__box">
                     <input class="input__imc" type="number" name="" id="weight" autocomplete="off" step="0.01" required/>
