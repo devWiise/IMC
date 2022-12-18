@@ -28,7 +28,9 @@
     <title>Calculadora IMC</title>
   </head>
 
-  <body id="darkMode">
+  <body class="containerLight" id="darkMode">
+    <div class="container">
+
     <header>
       <div class="navegation">
         <a href="#" class="logo">Logo</a>
@@ -38,8 +40,9 @@
       </div>
     </header>
     <main>
-      <section class="home">
-        <div class="container">
+      <section class="container_" >
+        <!-- change-->
+        <div class="home">
           <div class="button__dark">
             <input class="check" type="checkbox" onclick="darkMode()">
           </div>
@@ -72,12 +75,15 @@
                   <h3 class="input__title" id="inputTitle">IMC para Adulto</h3>
                   
                   <div class="input__box">
+
                     <input class="input__imc" type="number" name="" id="weight" autocomplete="off" step="0.01" required/>
+
                     <label for="" class="input__label">Peso(KG)</label>
                   </div>
 
                   <div class="input__box">
-                    <input class="input__imc" type="number" name="" id="height" autocomplete="off" step="0.01" required/>
+                    <input class="input__imc" type="number" name="" id="height" autocomplete="off" step="0.01" required />
+
                     <label for="" class="input__label">Altura (m)</label>
                   </div>
 
@@ -94,6 +100,7 @@
         </div>
       </section>
     </main>
-    <script src="js/main.js"></script>
+  </div>
+  <script src="js/main.js"></script>
   </body>
 </html>

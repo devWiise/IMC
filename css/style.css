@@ -14,9 +14,6 @@ html {
    font-family: 'Inter', sans-serif;
 }
 
-body {
-   background: var(--body-color);
-}
 
 /* Remove arrow input Number */
 input::-webkit-outer-spin-button,
@@ -132,7 +129,6 @@ input::-webkit-inner-spin-button {
 .genre__input {
    max-width: 15rem;
    display: flex;
-   /* justify-content: space-between; */
    align-items: center;
    margin-bottom: 1.6rem;
 }
@@ -195,17 +191,24 @@ input::-webkit-inner-spin-button {
    transition: .5s;
 }
 
-.input__imc:focus ~ .input__label {
+/* .input__imc:focus ~ .input__label {
    font-size: 1.3rem;
    color: #c2bfbd;
-}
+} */
 
 
-.input__imc:valid ~ .input__label {
+/* .input__imc:valid ~ .input__label {
+   top: -16px;
+   font-size: 1rem;
+   color: #c2bfbd;
+} */
+
+.isfocu {
    top: -16px;
    font-size: 1rem;
    color: #c2bfbd;
 }
+
 
 .button__calcular {
    position: absolute;

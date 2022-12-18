@@ -1,4 +1,4 @@
-.titleDark {
+/* .titleDark {
    color: var(--main-color);
 }
 
@@ -8,4 +8,25 @@
 
 .dkMode  {
    background-color: #252525;
+} */
+
+
+/* add */
+.containerLight .container {
+   background: var(--white-color);
+}
+
+.containerDarkMode .container {
+   background: #252525;
+}
+
+
+
+.containerDarkMode {
+   color: var(--main-color);
+
+}
+
+.containerDarkMode .container .imc__paragraph {
+   color: var(--body-color);
 }

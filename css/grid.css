@@ -1,6 +1,12 @@
-.container {
+.container_ {
    width: 100%;
    max-width: calc(1216px + 30px); /* + 30px do respiro */
    margin: 0 auto;
    padding: 0 1.5rem; /* respiro */
+   
+}
+
+.container {
+   /* width: 100vw; */
+   height: 100vh;
 }
